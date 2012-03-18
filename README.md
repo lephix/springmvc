@@ -7,6 +7,6 @@ Project is a Maven based project.
 From
 ----
 
-This project is build following official Spring MVC Showcase project. (https://github.com/SpringSource/spring-mvc-showcase)
+This project is built following official Spring MVC Showcase project. (https://github.com/SpringSource/spring-mvc-showcase)
 
 
