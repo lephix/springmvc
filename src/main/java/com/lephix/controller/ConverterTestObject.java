@@ -31,5 +31,10 @@ public class ConverterTestObject {
 		this.doubleTest = doubleTest;
 	}
 	
+	public String toString() {
+		return "integerTest:" + integerTest + "<br/>stringTest:" + stringTest
+				+ "<br/>boolTest:" + boolTest + "<br/>doubleTest:" + doubleTest;
+	}
+	
 	
 }
