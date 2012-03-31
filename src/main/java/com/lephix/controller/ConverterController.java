@@ -12,6 +12,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -67,8 +68,11 @@ public class ConverterController {
 	}
 	
 	@RequestMapping("bean/{integerTest}/{boolTest}")
-	public @ResponseBody String bean(ConverterTestObject object) {
-		return "Converted object " + object;
+	public @ResponseBody String bean(ConverterTestObject object, BindingResult result) {
+		if (result.hasErrors()) {
+			return object + "" + result.getAllErrors()+"";
+		}
+		return "Converted object successfully " + object;
 	}
 	
 	@RequestMapping(value="path/{foo}/{fruit}", method=RequestMethod.GET)
