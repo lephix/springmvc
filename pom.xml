@@ -17,7 +17,7 @@
     <dependency>
     	<groupId>org.springframework</groupId>
     	<artifactId>spring-webmvc</artifactId>
-    	<version>3.1.0.RELEASE</version>
+    	<version>3.2.0.RELEASE</version>
     </dependency>
     <dependency>
     	<groupId>org.slf4j</groupId>
@@ -40,17 +40,12 @@
     	<version>1.9.5</version>
     </dependency>
     <dependency>
-    	<groupId>joda-time</groupId>
-    	<artifactId>joda-time</artifactId>
-    	<version>2.1</version>
-    </dependency>
-    <dependency>
     	<groupId>javax.servlet</groupId>
     	<artifactId>jstl</artifactId>
     	<version>1.2</version>
     </dependency>
   </dependencies>
   <build>
-    <finalName>springmvc</finalName>
+    <finalName>d3demo</finalName>
   </build>
 </project>
